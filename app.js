@@ -16,7 +16,7 @@ app.post( "/", ( req, res ) =>
 {
     console.log( req.body.cityName );
     const city = req.body.cityName;
-    const appID = "00600a1f44bff7649a27cc0e2b39ab64";
+    const appID = "..."; //This part is deleted for privacy.Sorry
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + appID;
     https.get( url, ( response ) =>
